@@ -1,9 +1,5 @@
 package pl.kamilszymanski707.eshopapi.core.config
 
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
-import org.springframework.beans.factory.annotation.Value
-import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.cloud.config.server.EnableConfigServer
@@ -19,17 +15,7 @@ import org.springframework.context.annotation.PropertySources
 @EnableConfigServer
 @EnableEurekaClient
 @SpringBootApplication
-class ConfigApplication : CommandLineRunner {
-
-	@Value("\${git-root-search-path}")
-	private lateinit var gitRootSearchPath: String
-
-	private val log: Logger = LoggerFactory.getLogger(this::class.java)
-
-	override fun run(vararg args: String?) {
-		log.info("Loading properties from path: {} ...", gitRootSearchPath)
-	}
-}
+class ConfigApplication
 
 fun main(args: Array<String>) {
 	runApplication<ConfigApplication>(*args)

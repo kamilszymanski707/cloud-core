@@ -381,4 +381,5 @@ gradle-app.setting
 # End of https://www.toptal.com/developers/gitignore/api/intellij,intellij+iml,intellij+all,gradle,forgegradle,maven,mavensmate,java,java-web,code-java,kotlin,groovy,git,gitbook,tortoisegit
 /config/src/main/resources/logback-spring.xml
 /gateway/src/main/resources/logback-spring.xml
+/gateway/src/main/resources/gateway-allowed-routes.properties
 /eureka/src/main/resources/logback-spring.xml
