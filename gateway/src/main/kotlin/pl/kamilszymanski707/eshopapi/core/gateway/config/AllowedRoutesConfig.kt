@@ -14,5 +14,4 @@ internal class AllowedRouteConfig {
 
     var id: String = ""
     var method: String = ""
-    var roles: Array<String> = arrayOf()
 }

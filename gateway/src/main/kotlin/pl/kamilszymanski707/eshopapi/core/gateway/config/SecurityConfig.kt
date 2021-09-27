@@ -22,14 +22,9 @@ internal class SecurityConfig(
             .authorizeExchange { aes ->
                 allowedRoutesConfig.routes
                     .forEach {
-                        if (it.roles.isEmpty())
                             aes
                                 .pathMatchers(HttpMethod.valueOf(it.method), "${routePrefix}${it.id}/**")
                                 .permitAll()
-                        else
-                            aes
-                                .pathMatchers(HttpMethod.valueOf(it.method), "${routePrefix}${it.id}/**")
-                                .hasAnyRole(*it.roles)
                     }
 
                 aes
