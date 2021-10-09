@@ -8,7 +8,7 @@
 		<version>2.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>pl.kamilszymanski707.eshopapi.core</groupId>
+	<groupId>pl.kamilszymanski707.cloudcore</groupId>
 	<artifactId>config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>config</name>

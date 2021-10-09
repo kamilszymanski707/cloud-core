@@ -1,4 +1,4 @@
-package pl.kamilszymanski707.eshopapi.core.gateway.config
+package pl.kamilszymanski707.cloudcore.gateway.config
 
 import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig
 import io.github.resilience4j.timelimiter.TimeLimiterConfig

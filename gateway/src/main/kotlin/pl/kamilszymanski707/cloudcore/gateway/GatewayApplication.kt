@@ -1,22 +1,19 @@
-package pl.kamilszymanski707.eshopapi.core.config
+package pl.kamilszymanski707.cloudcore.gateway
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.cloud.config.server.EnableConfigServer
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 import org.springframework.context.annotation.PropertySource
 import org.springframework.context.annotation.PropertySources
 
 @PropertySources(
-	PropertySource("classpath:git-config.properties"),
-	PropertySource("classpath:application.yml"),
+	PropertySource("classpath:gateway-allowed-routes.properties"),
 	PropertySource("classpath:bootstrap.yml"),
 )
-@EnableConfigServer
 @EnableEurekaClient
 @SpringBootApplication
-class ConfigApplication
+class GatewayApplication
 
 fun main(args: Array<String>) {
-	runApplication<ConfigApplication>(*args)
+	runApplication<GatewayApplication>(*args)
 }

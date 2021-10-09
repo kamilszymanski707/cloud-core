@@ -1,4 +1,4 @@
-package pl.kamilszymanski707.eshopapi.core.gateway.config
+package pl.kamilszymanski707.cloudcore.gateway.config
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
@@ -9,7 +9,7 @@ import org.springframework.security.web.server.SecurityWebFilterChain
 
 @EnableWebFluxSecurity
 internal class SecurityConfig(
-    private val allowedRoutesConfig: AllowedRoutesConfig,
+        private val allowedRoutesConfig: AllowedRoutesConfig,
 ) {
 
     @Value("\${route-prefix}")

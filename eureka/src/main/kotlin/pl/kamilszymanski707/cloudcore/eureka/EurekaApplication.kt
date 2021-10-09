@@ -1,4 +1,4 @@
-package pl.kamilszymanski707.eshopapi.core.eureka
+package pl.kamilszymanski707.cloudcore.eureka
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
